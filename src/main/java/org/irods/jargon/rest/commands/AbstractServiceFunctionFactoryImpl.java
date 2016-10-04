@@ -13,7 +13,8 @@ import org.irods.jargon.rest.configuration.RestConfiguration;
  * @author Mike Conway - DICE (www.irods.org)
  *
  */
-public class ServiceFunctionFactoryImpl implements ServiceFunctionFactory {
+public abstract class AbstractServiceFunctionFactoryImpl implements
+		ServiceFunctionFactory {
 
 	/**
 	 * Required dependency on configuration
@@ -28,7 +29,7 @@ public class ServiceFunctionFactoryImpl implements ServiceFunctionFactory {
 	/**
 	 *
 	 */
-	public ServiceFunctionFactoryImpl() {
+	public AbstractServiceFunctionFactoryImpl() {
 	}
 
 	/*
